@@ -1,5 +1,7 @@
 package com.example.pomingpo.trytdd.Presenter;
 
+import javax.inject.Inject;
+
 /**
  * Created by pomingpo on 2017/6/15.
  */
@@ -7,6 +9,9 @@ package com.example.pomingpo.trytdd.Presenter;
 public class LoginPresenter {
     private int loginAttempt;
     private static final int MAX_LOGIN_ATTEMPT = 3;
+
+    public LoginPresenter() {
+    }
 
     public int incrementLoginAttempt() {
         loginAttempt++;
